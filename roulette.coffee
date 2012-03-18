@@ -40,7 +40,7 @@ class StakeEntity
       @currentBetMax--
 
     # Check if we need to start over from the beginning the next round
-    if @currentBetMin == @currentBetMax || @currentBetMin + @currentBetMax > maxBet
+    if @currentBetMin >= @currentBetMax || @currentBetMin + @currentBetMax > maxBet
       @currentBetMin = 1
       @currentBetMax = 4
 
