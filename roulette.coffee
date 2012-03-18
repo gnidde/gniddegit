@@ -1,6 +1,22 @@
+# This is a simulation of the theory presented in the book "Thirteen against the bank" by Norman Leigh.
+# http://www.amazon.com/Thirteen-Against-Bank-Roulette-Unbeatable/dp/1843440326/ref=sr_1_1?ie=UTF8&qid=1332107076&sr=8-1
+# The theory is as follows:
+# Six friends works together at the roulette table. One person is betting Red, the second on Black, the third on Low, the fourth on High,
+# the fithft on Even and the last on Odd.
+# They all starts with four piles of markers with the following amounts in each pile: 1, 2, 3, 4.
+# They always bet the smallest and the largest pile, e.g., the first bet will be 1+4=5 markers. If they win they add the net win as a new pile.
+# Hence, if the first marble stops on Red, the person betting on red will have the following piles: 1, 2, 3, 4, 5 and the person bettting on black will
+# have 2, 3.
+# The next round the person betting on red bets 1+5=6 and the person betting on black bets 2+3=5. If black looses this round too, he starts
+# over from the beginning with the piles 1, 2, 3, 4. A winning person continues to add a pile until he reaches the maximum bet that has been
+# decided among the friends before they started. When that is reached he also starts over from the beginning with the four piles 1, 2, 3, 4,
+# The maximum bet can be configured with the maxBet variable. It is also interresting to see the difference between having a zero or not on the
+# roulette table which can be set with the variable tableHasAZero.
+#
+
 tableHasAZero = true
-nrOfZerosHit = 0
 maxBet = 24
+nrOfZerosHit = 0
 
 class StakeEntity
   constructor: (@stakeName) ->
