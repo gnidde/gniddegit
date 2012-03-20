@@ -24,7 +24,7 @@ class StakeEntity
     @currentBetMax = 4
     @currentEarnings = 0
 
-  roll: (result, iteration) ->
+  roll: (result) ->
     # Set correct bet
     currentBet = @currentBetMin + @currentBetMax
 
@@ -51,7 +51,7 @@ stakeEntities = [new StakeEntity(names.red), new StakeEntity(names.black),
                 new StakeEntity(names.even), new StakeEntity(names.odd),
                 new StakeEntity(names.low), new StakeEntity(names.high)]
 
-roll = (iteration) ->
+roll = ->
   result = []
 
   # Lets roll the marble!
@@ -66,9 +66,7 @@ roll = (iteration) ->
     nrOfZerosHit++
 
   # Update all entities with the result from the roll
-  for ent in stakeEntities
-    do (ent) ->
-      ent.roll result, iteration
+  ent.roll result for ent in stakeEntities
 
 # Lets roll some marbles
 for i in [1..10000000]
