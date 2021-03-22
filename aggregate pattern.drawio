@@ -1,1 +1,49 @@
-<mxfile host="app.diagrams.net" modified="2021-03-22T09:01:43.048Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" version="13.10.9" etag="HZlnLDEtenWjVmjywnRz" type="github"><diagram id="8MLRXu-uEk0Cse0lEowI">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-03-22T15:29:31.953Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36" etag="ygsr0oUIrbvGJ4Mg1ceA" version="13.10.9" type="github">
+  <diagram id="8MLRXu-uEk0Cse0lEowI" name="Page-1">
+    <mxGraphModel dx="1186" dy="1070" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iRnIy6wgMQIB_FfuJFKn-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iRnIy6wgMQIB_FfuJFKn-1" target="iRnIy6wgMQIB_FfuJFKn-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iRnIy6wgMQIB_FfuJFKn-1" value="User stream" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iRnIy6wgMQIB_FfuJFKn-6" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="iRnIy6wgMQIB_FfuJFKn-2" target="iRnIy6wgMQIB_FfuJFKn-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iRnIy6wgMQIB_FfuJFKn-2" value="Medication stream" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iRnIy6wgMQIB_FfuJFKn-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="iRnIy6wgMQIB_FfuJFKn-3" target="iRnIy6wgMQIB_FfuJFKn-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iRnIy6wgMQIB_FfuJFKn-3" value="eCOA stream" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iRnIy6wgMQIB_FfuJFKn-11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="iRnIy6wgMQIB_FfuJFKn-4" target="iRnIy6wgMQIB_FfuJFKn-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iRnIy6wgMQIB_FfuJFKn-4" value="Unify agg stream&lt;br&gt;join User stream&lt;br&gt;join Medication stream&lt;br&gt;join eCOA stream" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="240" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iRnIy6wgMQIB_FfuJFKn-9" value="CSPPod agg collection" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="780" y="230" width="60" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="iRnIy6wgMQIB_FfuJFKn-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="iRnIy6wgMQIB_FfuJFKn-10" target="iRnIy6wgMQIB_FfuJFKn-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iRnIy6wgMQIB_FfuJFKn-10" value="MongoDB sink connector" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="540" y="240" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="iRnIy6wgMQIB_FfuJFKn-14" value="Query" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="iRnIy6wgMQIB_FfuJFKn-13" target="iRnIy6wgMQIB_FfuJFKn-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="iRnIy6wgMQIB_FfuJFKn-13" value="Unify HCP Portal&lt;br&gt;Patient list" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/free-1/128/Page__web__web_page-128.png" vertex="1" parent="1">
+          <mxGeometry x="712" y="460" width="128" height="128" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
